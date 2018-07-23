@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.CharacterActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/characterActivity_appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/characterActivity_toolBar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorPrimary"
+                android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:titleTextColor="@color/white">
+
+            </android.support.v7.widget.Toolbar>
+
+            <com.miguelcatalan.materialsearchview.MaterialSearchView
+                android:id="@+id/toolBar_searchView"
+                style="@style/MaterialSearchViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </FrameLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <com.app.jiwon.tekken7_manual.Custom.CustomViewPager
+        android:id="@+id/characterActivity_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/characterActivity_coordinatorLayout"
+        android:layout_below="@+id/characterActivity_appBarLayout" />
+
+    <View
+        android:id="@+id/characterActivity_navShdow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/characterActivity_navShdow_height"
+        android:layout_above="@+id/characterActivity_coordinatorLayout"
+        android:background="@drawable/bottom_nav_shadow" />
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/characterActivity_coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <com.aurelhubert.ahbottomnavigation.AHBottomNavigation
+            android:id="@+id/characterActivity_tabLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:selectedBackgroundVisible="false">
+
+        </com.aurelhubert.ahbottomnavigation.AHBottomNavigation>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</RelativeLayout>

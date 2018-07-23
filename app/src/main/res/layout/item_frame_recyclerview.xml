@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/frameTitleBackgroundColor"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/item_frame_recyclerView_textView_command"
+            style="@style/FrameTitleItemStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="command" />
+
+        <TextView
+            android:id="@+id/item_frame_recyclerView_textView_skill_name"
+            style="@style/FrameTitleItemStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="skillName" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/FramecontentsTopItemStyle"
+                android:layout_width="@dimen/item_frame_recylcerView_textView_contents_width"
+                android:layout_height="wrap_content"
+                android:text="시동" />
+
+            <View
+                style="@style/DividerStyle"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <TextView
+                android:id="@+id/item_frame_recyclerView_textView_start_frame"
+                style="@style/FramecontentsBottomItemStyle"
+                android:layout_width="@dimen/item_frame_recylcerView_textView_contents_width"
+                android:layout_height="match_parent"
+                android:text="value" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/DividerStyle"
+            android:layout_width="1dp"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/FramecontentsTopItemStyle"
+                android:layout_width="@dimen/item_frame_recylcerView_textView_contents_width"
+                android:layout_height="wrap_content"
+                android:text="가드" />
+
+            <View
+                style="@style/DividerStyle"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <TextView
+                android:id="@+id/item_frame_recyclerView_textView_block_frame"
+                style="@style/FramecontentsBottomItemStyle"
+                android:layout_width="@dimen/item_frame_recylcerView_textView_contents_width"
+                android:layout_height="match_parent"
+                android:text="value" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/DividerStyle"
+            android:layout_width="1dp"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/FramecontentsTopItemStyle"
+                android:layout_width="@dimen/item_frame_recylcerView_textView_contents_width"
+                android:layout_height="wrap_content"
+                android:text="히트" />
+
+            <View
+                style="@style/DividerStyle"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <TextView
+                android:id="@+id/item_frame_recyclerView_textView_hit_frame"
+                style="@style/FramecontentsBottomItemStyle"
+                android:layout_width="@dimen/item_frame_recylcerView_textView_contents_width"
+                android:layout_height="match_parent"
+                android:text="value" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/DividerStyle"
+            android:layout_width="1dp"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/FramecontentsTopItemStyle"
+                android:layout_width="@dimen/item_frame_recylcerView_textView_contents_width"
+                android:layout_height="wrap_content"
+                android:text="카운터" />
+
+            <View
+                style="@style/DividerStyle"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <TextView
+                android:id="@+id/item_frame_recyclerView_textView_counter_frame"
+                style="@style/FramecontentsBottomItemStyle"
+                android:layout_width="@dimen/item_frame_recylcerView_textView_contents_width"
+                android:layout_height="match_parent"
+                android:text="value" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/DividerStyle"
+            android:layout_width="1dp"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/FramecontentsTopItemStyle"
+                android:layout_width="@dimen/item_frame_recylcerView_textView_contents_width"
+                android:layout_height="wrap_content"
+                android:text="데미지" />
+
+            <View
+                style="@style/DividerStyle"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <TextView
+                android:id="@+id/item_frame_recyclerView_textView_damage"
+                style="@style/FramecontentsBottomItemStyle"
+                android:layout_width="@dimen/item_frame_recylcerView_textView_contents_width"
+                android:layout_height="match_parent"
+                android:text="value" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/DividerStyle"
+            android:layout_width="1dp"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/FramecontentsTopItemStyle"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="판정" />
+
+            <View
+                style="@style/DividerStyle"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <TextView
+                android:id="@+id/item_frame_recyclerView_textView_hit_level"
+                style="@style/FramecontentsBottomItemStyle"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:text="value" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/DividerStyle"
+            android:layout_width="1dp"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/FramecontentsTopItemStyle"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:text="비고" />
+
+            <View
+                style="@style/DividerStyle"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <TextView
+                android:id="@+id/item_frame_recyclerView_textView_note"
+                style="@style/FramecontentsBottomItemStyle"
+                android:layout_width="230dp"
+                android:layout_height="match_parent"
+                android:text="value" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

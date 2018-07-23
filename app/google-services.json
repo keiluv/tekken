@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "835321674734",
+    "firebase_url": "https://tekken7manual.firebaseio.com",
+    "project_id": "tekken7manual",
+    "storage_bucket": "tekken7manual.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:835321674734:android:1749bce65bc538bf",
+        "android_client_info": {
+          "package_name": "com.app.jiwon.tekken7_manual"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "835321674734-s1fnfp57ntp5nu1o3dd9onj68jkmr2e7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.jiwon.tekken7_manual",
+            "certificate_hash": "d473e2d868dacfb30a74a92a0946590607e87a4c"
+          }
+        },
+        {
+          "client_id": "835321674734-nclrrr8381lv2nmb9ivjt2jcl8pej64a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmKLekp7LHwv9xCdbYLDkEzm0G_vQuo-A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "835321674734-nclrrr8381lv2nmb9ivjt2jcl8pej64a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

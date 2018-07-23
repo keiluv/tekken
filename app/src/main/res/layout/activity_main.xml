@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.app.jiwon.tekken7_manual.Activity.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/mainActivity_appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/mainActivity_toolBar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorPrimary"
+                android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:titleTextColor="@color/white">
+
+            </android.support.v7.widget.Toolbar>
+
+            <com.miguelcatalan.materialsearchview.MaterialSearchView
+                android:id="@+id/toolBar_searchView"
+                style="@style/MaterialSearchViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </FrameLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <com.app.jiwon.tekken7_manual.Custom.CustomViewPager
+        android:id="@+id/mainActivity_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/mainActivity_coordinatorLayout"
+        android:layout_below="@+id/mainActivity_appBarLayout" />
+
+    <View
+        android:id="@+id/mainActivity_navShdow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mainActivity_navShdow_height"
+        android:layout_above="@+id/mainActivity_coordinatorLayout"
+        android:background="@drawable/bottom_nav_shadow" />
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/mainActivity_coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <com.aurelhubert.ahbottomnavigation.AHBottomNavigation
+            android:id="@+id/mainActivity_tabLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:selectedBackgroundVisible="false">
+
+        </com.aurelhubert.ahbottomnavigation.AHBottomNavigation>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</RelativeLayout>

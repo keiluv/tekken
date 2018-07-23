@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/item_shortCuts_recyclerView_height"
+    app:cardCornerRadius="@dimen/item_shortCuts_recyclerView_radius">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/item_shortCuts_recyclerView_imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/shortcut_community_dc" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/coverColor" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/item_shortCuts_recyclerView_textView_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:padding="@dimen/item_shortCuts_recyclerView_textView_name_padding"
+            android:text="koreanName"
+            android:textColor="@color/white"
+            android:textSize="@dimen/item_shortCuts_recyclerView_textView_name_text_size" />
+
+        <TextView
+            android:id="@+id/item_shortCuts_recyclerView_textView_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/item_shortCuts_recyclerView_textView_type_padding"
+            android:text="type"
+            android:textColor="@color/white"
+            android:textSize="@dimen/item_shortCuts_recyclerView_textView_type_text_size" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

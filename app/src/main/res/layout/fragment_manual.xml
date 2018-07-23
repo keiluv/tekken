@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:text="죄송합니다. 제가 메뉴얼도 만들려했는데 구현하기가 쉽지 않네요.
+메뉴얼은 더 생각해보고 할 수 있으면 추가하고 못하면 제거하도록 하겠습니다. (이러면 어플 이름이 왜 메뉴얼일까요 ㅎㅎ)"
+        android:textColor="@color/textColor" />
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="SplashActivity" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="noActionBarTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+    </style>
+
+    <style name="MaterialSearchViewStyle">
+        <item name="searchBackground">@color/colorPrimaryDark</item>
+        <item name="android:textColorHint">@color/textHintColor</item>
+        <item name="searchCloseIcon">@drawable/ic_action_navigation_close_inverted</item>
+        <item name="searchBackIcon">@drawable/ic_action_navigation_arrow_back_inverted</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="FrameTitleItemStyle">
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">8dp</item>
+    </style>
+
+    <style name="FramecontentsTopItemStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:layout_margin">8dp</item>
+    </style>
+
+    <style name="FramecontentsBottomItemStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:layout_margin">8dp</item>
+    </style>
+
+    <style name="DividerStyle">
+        <item name="android:layout_marginTop">@dimen/item_frame_recylcerView_divider_margin</item>
+        <item name="android:layout_marginBottom">@dimen/item_frame_recylcerView_divider_margin</item>
+        <item name="android:background">@color/dividerColor</item>
+    </style>
+
+    <style name="ProfileContentsTitleStyle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="ProfileContentsValueStyle">
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+</resources>

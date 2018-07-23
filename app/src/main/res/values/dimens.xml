@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="custom_button_padding">60dp</dimen>
+
+    <dimen name="item_select_recyclerView_cardView_shadow">2dp</dimen>
+    <dimen name="item_select_recyclerView_cardView_radius">4dp</dimen>
+    <dimen name="item_select_recyclerView_textView_padding">4dp</dimen>
+    <dimen name="item_select_recyclerView_imageView_padding">0dp</dimen>
+
+    <dimen name="mainActivity_navShdow_height">2dp</dimen>
+    <dimen name="characterActivity_navShdow_height">2dp</dimen>
+
+    <dimen name="item_shortCuts_recyclerView_radius">4dp</dimen>
+    <dimen name="item_shortCuts_recyclerView_height">140dp</dimen>
+    <dimen name="item_shortCuts_recyclerView_textView_name_padding">12dp</dimen>
+    <dimen name="item_shortCuts_recyclerView_textView_type_padding">8dp</dimen>
+    <dimen name="item_shortCuts_recyclerView_textView_name_text_size">24dp</dimen>
+    <dimen name="item_shortCuts_recyclerView_textView_type_text_size">12dp</dimen>
+
+    <dimen name="item_dictionary_recyclerView_textView_padding">8dp</dimen>
+    <dimen name="item_dictionary_recyclerView_textView_text_size">16dp</dimen>
+
+    <dimen name="item_patchnote_recyclerView_layout_padding">4dp</dimen>
+    <dimen name="item_patchnote_recyclerView_textView_version_text_size">44dp</dimen>
+    <dimen name="item_patchnote_recyclerView_textView_date_text_size">16dp</dimen>
+
+    <dimen name="fragment_profile_imageView_size">150dp</dimen>
+    <dimen name="fragment_profile_imageView_border_size">3dp</dimen>
+    <dimen name="fragment_profile_imageView_margin_top">32dp</dimen>
+
+    <dimen name="item_frame_recylcerView_divider_margin">0dp</dimen>
+    <dimen name="item_frame_recylcerView_textView_contents_width">50dp</dimen>
+
+    <dimen name="item_combo_recylcerView_recyclerView_radius">4dp</dimen>
+    <dimen name="item_combo_recylcerView_recyclerView_padding">4dp</dimen>
+    <dimen name="item_combo_recylcerView_textView_title_text_size">20dp</dimen>
+    <dimen name="item_combo_recylcerView_textView_title_padding">8dp</dimen>
+
+    <dimen name="item_combo_list_textView_text_size">16dp</dimen>
+    <dimen name="item_combo_list_textView_margin">4dp</dimen>
+</resources>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="selectName">
+        <item>아쿠마</item>
+        <item>알리사</item>
+        <item>아스카</item>
+        <item>밥</item>
+        <item>브라이언</item>
+        <item>클라우디오</item>
+        <item>데빌 진</item>
+        <item>드라그노프</item>
+        <item>에디</item>
+        <item>엘리자</item>
+        <item>펭</item>
+        <item>기스</item>
+        <item>기가스</item>
+        <item>헤이아치</item>
+        <item>화랑</item>
+        <item>잭7</item>
+        <item>진</item>
+        <item>조시</item>
+        <item>카타리나</item>
+        <item>카즈미</item>
+        <item>카즈야</item>
+        <item>킹</item>
+        <item>쿠마</item>
+        <item>라스</item>
+        <item>로우</item>
+        <item>리</item>
+        <item>레오</item>
+        <item>리리</item>
+        <item>럭키</item>
+        <item>미겔</item>
+        <item>니나</item>
+        <item>녹티스</item>
+        <item>판다</item>
+        <item>붕권</item>
+        <item>레이븐</item>
+        <item>샤힌</item>
+        <item>스티브</item>
+        <item>샤오유</item>
+        <item>요시미츠</item>
+    </string-array>
+
+
+    <string-array name="characterName">
+        <item>akuma</item>
+        <item>alisa</item>
+        <item>asuka</item>
+        <item>bob</item>
+        <item>bryan</item>
+        <item>claudio</item>
+        <item>devil_jin</item>
+        <item>dragunov</item>
+        <item>eddy</item>
+        <item>eliza</item>
+        <item>feng</item>
+        <item>geese</item>
+        <item>gigas</item>
+        <item>hei</item>
+        <item>hwoarang</item>
+        <item>jack</item>
+        <item>jin</item>
+        <item>josie</item>
+        <item>katarina</item>
+        <item>kazumi</item>
+        <item>kazuya</item>
+        <item>king</item>
+        <item>kuma</item>
+        <item>lars</item>
+        <item>law</item>
+        <item>lee</item>
+        <item>leo</item>
+        <item>lili</item>
+        <item>lucky</item>
+        <item>miguel</item>
+        <item>nina</item>
+        <item>noctis</item>
+        <item>panda</item>
+        <item>paul</item>
+        <item>raven</item>
+        <item>shaheen</item>
+        <item>steve</item>
+        <item>xiaoyu</item>
+        <item>yoshi</item>
+    </string-array>
+
+    <string-array name="shortCutsName">
+        <item>디시 철권갤러리</item>
+        <item>가지고 노는 철권</item>
+        <item>rbnorway.org</item>
+        <item>철권 센트럴</item>
+        <item>철권 위키</item>
+
+        <item>쩌리TV</item>
+        <item>EBS GAME</item>
+        <item>철권 소용돌이&amp;말구</item>
+        <item>무릎의 철권TV</item>
+        <item>아빠킹</item>
+        <item>나락호프철권 프로게이머</item>
+        <item>철권 로하이</item>
+        <item>전띵</item>
+        <item>꼬꼬마의 철권</item>
+        <item>폴탄</item>
+        <item>체리베리망고</item>
+    </string-array>
+
+    <string-array name="shortCutsLink">
+        <item>http://gall.dcinside.com/board/lists/?id=fightgametekken</item>
+        <item>https://cafe.naver.com/teken</item>
+        <item>http://rbnorway.org/</item>
+        <item>http://tekkencentral.com/bbs/</item>
+        <item>http://tekken.wikia.com/wiki/Tekken_Wiki</item>
+
+        <item>https://www.youtube.com/channel/UCNLWplORMwwEQ8YqD_qMb_Q</item>
+        <item>https://www.youtube.com/channel/UCIysp5P79LeXzs-1raC7fDg</item>
+        <item>https://www.youtube.com/channel/UCcYAC0ryN86JSh5g_EYenqQ</item>
+        <item>https://www.youtube.com/user/Tekkenknee</item>
+        <item>https://www.youtube.com/user/rkaekw</item>
+        <item>https://www.youtube.com/channel/UCTl9bXrC_nZbSA00lElwRcg</item>
+        <item>https://www.youtube.com/user/idsng0225</item>
+        <item>https://www.youtube.com/channel/UCn5z4jfEA9vIWnIWf7632HQ</item>
+        <item>https://www.youtube.com/channel/UCMsrdVuaONQ94f1Spb8dfSQ</item>
+        <item>https://www.youtube.com/channel/UCLQjlGRaJSUsxUA13AtBS0w</item>
+        <item>https://www.youtube.com/user/captain0218</item>
+    </string-array>
+
+    <string-array name="versionKey">
+        <item>patchnote</item>
+        <item>dictionary</item>
+        <item>profile</item>
+        <item>frame</item>
+        <item>combo</item>
+    </string-array>
+
+</resources>
