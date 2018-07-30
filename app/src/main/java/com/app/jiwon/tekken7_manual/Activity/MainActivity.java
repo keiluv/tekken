@@ -247,10 +247,10 @@ public class MainActivity extends AppCompatActivity {
         }
 
         for (int i = 0; i < characterList.length; i++) {
-//            if (!getPath("combo", characterList[i]).exists()) {
-//                FinishApp();
-//                return;
-//            }
+            if (!getPath("combo", characterList[i]).exists()) {
+                FinishApp();
+                return;
+            }
 
             if (!getPath("frame", characterList[i]).exists()) {
                 FinishApp();
