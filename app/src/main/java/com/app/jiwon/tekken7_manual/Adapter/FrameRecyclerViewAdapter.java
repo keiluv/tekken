@@ -3,6 +3,7 @@ package com.app.jiwon.tekken7_manual.Adapter;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
@@ -122,11 +123,12 @@ public class FrameRecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.
         } else {
             for (FrameRecyclerViewItem item : saveList) {
 
-                if (item.getCommand().toLowerCase().contains(searchText)) {
+                if (item.getCommand().toLowerCase().contains(searchText) || item.getSkillName().toLowerCase().contains(searchText)) {
                     list.add(item);
                 }
             }
         }
         notifyDataSetChanged();
     }
+
 }

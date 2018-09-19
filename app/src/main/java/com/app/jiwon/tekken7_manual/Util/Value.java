@@ -13,49 +13,51 @@ public class Value {
     public static final int cardViewMargin = 12;
 
     public static final String comboLink[] = {
-            "https://www.youtube.com/watch?v=Q7PM1odSK3I",
-            "https://www.youtube.com/watch?v=jQprNV-cHFI&t=1s",
-            "https://www.youtube.com/watch?v=-qeXaycTdQE&t=269s",
-            "https://www.youtube.com/watch?v=axYpISGZRI4",
-            "https://www.youtube.com/watch?v=8PHoaFomTpI",
-            "https://www.youtube.com/watch?v=p-0xXFY0cUE&t=99s",
-            "https://www.youtube.com/watch?v=AGyvY2EIMCo",
-            "https://www.youtube.com/watch?v=EQ_zDhGUQWQ",
-            "https://www.youtube.com/watch?v=pvC6uBtfZ30",
-            "https://www.youtube.com/watch?v=4Q7Bg5KStyQ",
-            "https://www.youtube.com/watch?v=ko5UDkViyD8",
-            "https://www.youtube.com/watch?v=SIT6-0JZFBE",
-            "https://www.youtube.com/watch?v=4cInR0osyiA",
-            "https://www.youtube.com/watch?v=_RmckqJmNms&t=236s",
-            "https://www.youtube.com/watch?v=ITp8-rkkDzk",
-            "https://www.youtube.com/watch?v=WGh61lKta7o",
-            "https://www.youtube.com/watch?v=Y87FRrEQ7v8",
-            "https://www.youtube.com/watch?v=20_oOzBGrGQ",
-            "https://www.youtube.com/watch?v=v7Uze4mfFuc",
-            "https://www.youtube.com/watch?v=GjeOIo4ez7M",
-            "https://www.youtube.com/watch?v=gNlz5LxW7Fk",
-            "https://www.youtube.com/watch?v=lBfo2LYwmJE",
-            "https://www.youtube.com/watch?v=lSiaLyPMQbM",
-            "https://www.youtube.com/watch?v=B-6WfM4ijvg",
-            "https://www.youtube.com/watch?v=HrOoWSgyBR4",
-            "https://www.youtube.com/watch?v=9n-GPmArobw",
-            "https://www.youtube.com/watch?v=UPnCuN1Qdtg",
-            "https://www.youtube.com/watch?v=Uutjq1cyFfw",
-            "https://www.youtube.com/watch?v=i8Er-Y6tFJA",
-            "https://www.youtube.com/watch?v=NOPy3bKqqQM",
-            "https://www.youtube.com/watch?v=hve6HvxlBC8",
-            "https://www.youtube.com/watch?v=ZSrzvsAt5l0",
-            "https://www.youtube.com/watch?v=lSiaLyPMQbM&t=10s",
-            "https://www.youtube.com/watch?v=3L9JRL5XzLU&t=495s",
-            "https://www.youtube.com/watch?v=6SoIs-sNaLA",
-            "https://www.youtube.com/watch?v=OTPwivhUUrE",
-            "https://www.youtube.com/watch?v=bfUsjd4fH2w",
-            "https://www.youtube.com/watch?v=CRBQ4IcdBh4",
-            "https://www.youtube.com/watch?v=q86m8FVSRWA",
+            "https://www.youtube.com/watch?v=Q7PM1odSK3I",                  //고우키
+            "https://www.youtube.com/watch?v=jQprNV-cHFI&t=1s",             //알리사
+            "https://www.youtube.com/watch?v=-qeXaycTdQE&t=269s",           //아스카
+            "https://www.youtube.com/watch?v=qpchv5DGk-k",                  //안나
+            "https://www.youtube.com/watch?v=axYpISGZRI4",                  //밥
+            "https://www.youtube.com/watch?v=8PHoaFomTpI",                  //브라이언
+            "https://www.youtube.com/watch?v=p-0xXFY0cUE&t=99s",            //클라
+            "https://www.youtube.com/watch?v=AGyvY2EIMCo",                  //데빌진
+            "https://www.youtube.com/watch?v=EQ_zDhGUQWQ",                  //드라그
+            "https://www.youtube.com/watch?v=pvC6uBtfZ30",                  //에디
+            "https://www.youtube.com/watch?v=4Q7Bg5KStyQ",                  //엘리자
+            "https://www.youtube.com/watch?v=ko5UDkViyD8",                  //펭
+            "https://www.youtube.com/watch?v=SIT6-0JZFBE",                  //기스
+            "https://www.youtube.com/watch?v=4cInR0osyiA",                  //기가스
+            "https://www.youtube.com/watch?v=_RmckqJmNms&t=236s",           //헤이아치
+            "https://www.youtube.com/watch?v=ITp8-rkkDzk",                  //화랑
+            "https://www.youtube.com/watch?v=WGh61lKta7o",                  //잭
+            "https://www.youtube.com/watch?v=Y87FRrEQ7v8",                  //진
+            "https://www.youtube.com/watch?v=20_oOzBGrGQ",                  //조시
+            "https://www.youtube.com/watch?v=v7Uze4mfFuc",                  //카타리나
+            "https://www.youtube.com/watch?v=GjeOIo4ez7M",                  // 카즈미
+            "https://www.youtube.com/watch?v=gNlz5LxW7Fk",                  // 카즈야
+            "https://www.youtube.com/watch?v=lBfo2LYwmJE",                  //킹
+            "https://www.youtube.com/watch?v=lSiaLyPMQbM",                  //쿠마
+            "https://www.youtube.com/watch?v=B-6WfM4ijvg",                  //라스
+            "https://www.youtube.com/watch?v=HrOoWSgyBR4",                  //로우
+            "https://www.youtube.com/watch?v=9n-GPmArobw",                  //리
+            "https://www.youtube.com/watch?v=UPnCuN1Qdtg",                  //레오
+            "https://www.youtube.com/watch?v=Uutjq1cyFfw",                  //리리
+            "https://www.youtube.com/watch?v=i8Er-Y6tFJA",                  //럭키
+            "https://www.youtube.com/watch?v=ju7XMxOyr-M",                  //레이우롱
+            "https://www.youtube.com/watch?v=NOPy3bKqqQM",                  //미겔
+            "https://www.youtube.com/watch?v=hve6HvxlBC8",                  //니나
+            "https://www.youtube.com/watch?v=ZSrzvsAt5l0",                  //녹티스
+            "https://www.youtube.com/watch?v=lSiaLyPMQbM&t=10s",            //판다
+            "https://www.youtube.com/watch?v=3L9JRL5XzLU&t=495s",           //폴
+            "https://www.youtube.com/watch?v=6SoIs-sNaLA",                  //레이븐
+            "https://www.youtube.com/watch?v=OTPwivhUUrE",                  //샤힌
+            "https://www.youtube.com/watch?v=bfUsjd4fH2w",                  //스티브
+            "https://www.youtube.com/watch?v=CRBQ4IcdBh4",                  //샤오유
+            "https://www.youtube.com/watch?v=q86m8FVSRWA",                  //요시미츠
     };
 
     public static final int portraitImages[] = {
-            R.drawable.portrait_akuma, R.drawable.portrait_alisa, R.drawable.portrait_asuka,
+            R.drawable.portrait_akuma, R.drawable.portrait_alisa, R.drawable.portrait_asuka, R.drawable.portrait_anna,
             R.drawable.portrait_bob, R.drawable.portrait_bryan,
             R.drawable.portrait_claudio,
             R.drawable.portrait_devil_jin, R.drawable.portrait_dragunov,
@@ -65,7 +67,7 @@ public class Value {
             R.drawable.portrait_hei, R.drawable.portrait_hwoarang,
             R.drawable.portrait_jack, R.drawable.portrait_jin, R.drawable.portrait_josie,
             R.drawable.portrait_katarina, R.drawable.portrait_kazumi, R.drawable.portrait_kazuya, R.drawable.portrait_king, R.drawable.portrait_kuma,
-            R.drawable.portrait_lars, R.drawable.portrait_law, R.drawable.portrait_lee, R.drawable.portrait_leo, R.drawable.portrait_lili, R.drawable.portrait_lucky,
+            R.drawable.portrait_lars, R.drawable.portrait_law, R.drawable.portrait_lee, R.drawable.portrait_leo, R.drawable.portrait_lili, R.drawable.portrait_lucky, R.drawable.portrait_lei,
             R.drawable.portrait_miguel,
             R.drawable.portrait_nina, R.drawable.portrait_noctis,
             R.drawable.portrait_panda, R.drawable.portrait_paul,
