@@ -40,7 +40,7 @@ public class ComboRecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.
         ComboRecyclerViewItem item = list.get(position);
         RecyclerView.ItemDecoration dividerItemDecoration = new RecyclerViewDividerDecoration(ContextCompat.getDrawable(context, R.drawable.divider));
 
-        if (item.getStarter().equals("벽꽝이후") || item.getStarter().contains("사원맵 바닥"))
+        if (item.getStarter().equals("벽꽝이후") || item.getStarter().contains("사원맵 바닥") || item.getStarter().contains("벽 바운드"))
             customHolder.textView.setText(item.getStarter());
         else
             customHolder.textView.setText("시동기 : " + item.getStarter());

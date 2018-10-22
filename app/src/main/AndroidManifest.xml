@@ -39,6 +39,13 @@
             android:name=".Activity.HelpActivity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Holo.Light.DialogWhenLarge.NoActionBar"></activity>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_tab_shortcuts" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorPrimaryDark" />
     </application>
 
 </manifest>

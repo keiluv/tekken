@@ -23,6 +23,14 @@
           }
         },
         {
+          "client_id": "835321674734-i0bl3dqm1c8sdqhv8vcbqkrvgji38ja1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.jiwon.tekken7_manual",
+            "certificate_hash": "735c655d4db768a90679a1e6ed5e54cfcc2f3c30"
+          }
+        },
+        {
           "client_id": "835321674734-nclrrr8381lv2nmb9ivjt2jcl8pej64a.apps.googleusercontent.com",
           "client_type": 3
         }

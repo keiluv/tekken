@@ -27,6 +27,8 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.iid.FirebaseInstanceId;
+import com.google.firebase.messaging.FirebaseMessaging;
 import com.google.firebase.storage.FileDownloadTask;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
@@ -42,11 +44,13 @@ import butterknife.ButterKnife;
 
 public class SplashActivity extends AppCompatActivity {
 
+    private int dbCount = 0;
+
     private Context context = SplashActivity.this;
 
     private Intent intent;
 
-    int count = 0;
+    private int count = 0;
 
     final ArrayList<DataSnapshot> arrayListDataSnapshot = new ArrayList<>();
     final ArrayList<String> arrayListKey = new ArrayList<>();
@@ -194,12 +198,16 @@ public class SplashActivity extends AppCompatActivity {
                         int thisVersion = SharedPreferencesUtil.getIntPreferences(dataSnapshot.getKey(), item.getKey(), 0, context);
 
                         if (modal.version > thisVersion) {
+//                            Log.e("adsfdf", key + ": " + modal.version + ", 기기 버전 : " + thisVersion);
+
                             arrayListDataSnapshot.add(item);
                             arrayListKey.add(dataSnapshot.getKey());
                         }
                     }
 
-                    listener.OnSuccess(key);
+                    dbCount++;
+//                    Log.e("adfadf", key + " onSuccess" + dbCount);
+                    listener.OnSuccess(dbCount);
                 }
 
                 @Override
@@ -213,8 +221,11 @@ public class SplashActivity extends AppCompatActivity {
     public void versionCheck() {
         versionChecker(new SuccessListener() {
             @Override
-            public void OnSuccess(String key) {
-                if (versionKey[versionKey.length - 1].equals(key) && !arrayListDataSnapshot.isEmpty()) {
+            public void OnSuccess(int key) {
+
+                if (key == 5 && !arrayListDataSnapshot.isEmpty()) {
+//                    Log.e("df", "다운로드 이행");
+
                     AlertDialog.Builder builder = new AlertDialog.Builder(SplashActivity.this)
                             .setMessage(downloadAlertMessage)
                             .setPositiveButton(agree, new DialogInterface.OnClickListener() {
@@ -232,7 +243,8 @@ public class SplashActivity extends AppCompatActivity {
 
                     AlertDialog dialog = builder.create();
                     dialog.show();
-                } else if (versionKey[versionKey.length - 1].equals(key) && arrayListDataSnapshot.isEmpty()) {
+                } else if (key == 5 && arrayListDataSnapshot.isEmpty()) {
+//                    Log.e("adf", "다운로드 안하고 넘어감");
                     startActivity(intent);
                     finish();
                 }
