@@ -2,6 +2,7 @@ package com.app.jiwon.tekken7_manual.Items;
 
 public class ComboRecyclerViewItem {
     private String starter;
+//    private String link;
     private String[] comboList;
 
     public String getStarter() {

@@ -62,7 +62,6 @@ public class FrameRecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.
     }
 
     private class FrameRecyclerViewAdapterHolder extends RecyclerView.ViewHolder {
-
         TextView skill_name;
         TextView command;
         TextView hit_level;
@@ -98,6 +97,7 @@ public class FrameRecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.
             String hit_frame,
             String counter_frame,
             String note) {
+
         FrameRecyclerViewItem item = new FrameRecyclerViewItem();
 
         item.setSkillName(skill_name);

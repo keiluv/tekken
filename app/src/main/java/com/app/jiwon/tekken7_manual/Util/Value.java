@@ -84,6 +84,7 @@ public class Value {
             R.drawable.shortcut_youtube_whirlwind,
             R.drawable.shortcut_youtube_knee,
             R.drawable.shortcut_youtube_dad,
+            R.drawable.shortcut_youtube_jkim,
             R.drawable.shortcut_youtube_narak,
             R.drawable.shortcut_youtube_lowhigh,
             R.drawable.shortcut_youtube_jeongdding,

@@ -222,7 +222,6 @@ public class SplashActivity extends AppCompatActivity {
         versionChecker(new SuccessListener() {
             @Override
             public void OnSuccess(int key) {
-
                 if (key == 5 && !arrayListDataSnapshot.isEmpty()) {
 //                    Log.e("df", "다운로드 이행");
 
