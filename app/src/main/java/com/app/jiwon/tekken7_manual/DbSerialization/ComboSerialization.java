@@ -12,6 +12,9 @@ public class ComboSerialization {
     @SerializedName("name")
     public String name;
 
+//    @SerializedName("link")
+//    public String link;
+
     @SerializedName("combo")
     public List<ComboSerialization.combo> combo;
 

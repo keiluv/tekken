@@ -1,25 +1,24 @@
 package com.app.jiwon.tekken7_manual.Activity;
 
 import android.content.Context;
-import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Environment;
 import android.support.v4.view.ViewPager;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.SubMenu;
 import android.widget.Toast;
 
 import com.app.jiwon.tekken7_manual.Adapter.MainViewPagerAdapter;
 import com.app.jiwon.tekken7_manual.Fragment.DictionaryFragment;
 import com.app.jiwon.tekken7_manual.Fragment.SelectFragment;
 import com.app.jiwon.tekken7_manual.R;
-import com.app.jiwon.tekken7_manual.Util.SharedPreferencesUtil;
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigation;
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigationItem;
-import com.gun0912.tedpermission.TedPermission;
 import com.miguelcatalan.materialsearchview.MaterialSearchView;
 
 import java.io.File;
@@ -38,9 +37,10 @@ public class MainActivity extends AppCompatActivity {
     private Context context = MainActivity.this;
 
     private boolean favoriteCheck = false;
-    private boolean isPagerCheck = true;
+    private boolean isPageCheck = true;
 
     private MenuItem mFavoriteMenu;
+    private MenuItem mSettingMenu;
 
     private MainViewPagerAdapter mainViewPagerAdapter;
 
@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
     AHBottomNavigationItem navItem1 = new AHBottomNavigationItem(R.string.main_tab_select, R.drawable.ic_tab_character, R.color.black);
     AHBottomNavigationItem navItem2 = new AHBottomNavigationItem(R.string.main_tab_dictionary, R.drawable.ic_tab_dictionary, R.color.black);
     AHBottomNavigationItem navItem3 = new AHBottomNavigationItem(R.string.main_tab_shortcuts, R.drawable.ic_tab_shortcuts, R.color.black);
-    AHBottomNavigationItem navItem4 = new AHBottomNavigationItem(R.string.main_tab_patchnote, R.drawable.ic_tab_patchnote, R.color.black);
+    AHBottomNavigationItem navItem4 = new AHBottomNavigationItem(R.string.main_tab_more, R.drawable.ic_tab_more, R.color.black);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -110,9 +110,9 @@ public class MainActivity extends AppCompatActivity {
                     searchView.closeSearch();
 
                 if (position == 1)
-                    isPagerCheck = false;
+                    isPageCheck = false;
                 else if (position == 0)
-                    isPagerCheck = true;
+                    isPageCheck = true;
 
                 viewPager.setCurrentItem(position, true);
 
@@ -131,8 +131,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public boolean onQueryTextChange(String newText) {
-
-                if (isPagerCheck) {
+                if (isPageCheck) {
                     ((SelectFragment) mainViewPagerAdapter.getItem(viewPager.getCurrentItem())).adapter.fillter(newText);
                 } else {
                     ((DictionaryFragment) mainViewPagerAdapter.getItem(viewPager.getCurrentItem())).adapter.fillter(newText);
@@ -145,7 +144,7 @@ public class MainActivity extends AppCompatActivity {
         searchView.setOnSearchViewListener(new MaterialSearchView.SearchViewListener() {
             @Override
             public void onSearchViewShown() {
-                if (isPagerCheck) {
+                if (isPageCheck) {
                     ((SelectFragment) mainViewPagerAdapter.getItem(viewPager.getCurrentItem())).adapter.listChange();
                     mFavoriteMenu.setIcon(R.drawable.ic_star_empty);
                     favoriteCheck = false;
@@ -179,6 +178,12 @@ public class MainActivity extends AppCompatActivity {
             MenuItem mSearchMenu = menu.findItem(R.id.action_search);
             searchView.setMenuItem(mSearchMenu);
             searchView.setHint(dictionarySearchHint);
+        } else if (position == 3) {
+            SubMenu subMenu = menu.addSubMenu(0, Menu.NONE, 0, "설정");
+            subMenu.getItem().setIcon(R.drawable.ic_settings);
+            subMenu.getItem().setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
+
+            subMenu.add(1, 8, Menu.NONE, "푸쉬 알림 설정");
         } else {
             toolbar.getMenu().clear();
         }
@@ -195,6 +200,20 @@ public class MainActivity extends AppCompatActivity {
             case R.id.action_favorite:
 
                 mFavoriteCheck(item);
+
+                return true;
+
+            case 8:
+                Log.e("click", "click");
+
+                Intent intent = new Intent();
+                intent.setAction("android.settings.APP_NOTIFICATION_SETTINGS");
+
+                intent.putExtra("app_package", getPackageName());
+                intent.putExtra("app_uid", getApplicationInfo().uid);
+                intent.putExtra("android.provider.extra.APP_PACKAGE", getPackageName());
+
+                startActivity(intent);
 
                 return true;
         }

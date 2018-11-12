@@ -1,25 +1,22 @@
 package com.app.jiwon.tekken7_manual.Util;
 
 import android.os.Environment;
-import android.util.Log;
 
 import com.app.jiwon.tekken7_manual.Adapter.ComboRecyclerViewAdapter;
 import com.app.jiwon.tekken7_manual.Adapter.DictionaryRecyclerViewAdapter;
 import com.app.jiwon.tekken7_manual.Adapter.FrameRecyclerViewAdapter;
-import com.app.jiwon.tekken7_manual.Adapter.PatchNoteRecyclerViewAdapter;
+import com.app.jiwon.tekken7_manual.Adapter.MoreRecyclerViewAdapter;
 import com.app.jiwon.tekken7_manual.DbSerialization.ComboSerialization;
 import com.app.jiwon.tekken7_manual.DbSerialization.DictionarySerialization;
 import com.app.jiwon.tekken7_manual.DbSerialization.FrameSerialization;
 import com.app.jiwon.tekken7_manual.DbSerialization.PatchnoteSerialization;
 import com.app.jiwon.tekken7_manual.DbSerialization.ProfileSerialization;
 import com.app.jiwon.tekken7_manual.Items.ProfileFragmentItem;
-import com.app.jiwon.tekken7_manual.R;
 import com.google.gson.Gson;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
-import java.util.ArrayList;
 
 public class JsonReader {
 
@@ -62,7 +59,7 @@ public class JsonReader {
         adapter.notifyDataSetChanged();
     }
 
-    public static void PatchnoteSet(String name, String filePath, PatchNoteRecyclerViewAdapter adapter) {
+    public static void PatchnoteSet(String name, String filePath, MoreRecyclerViewAdapter adapter) {
         PatchnoteSerialization patchnoteSerialization = new Gson().fromJson(getJson(name, filePath), PatchnoteSerialization.class);
 
         for (PatchnoteSerialization.value value : patchnoteSerialization.patch) {
