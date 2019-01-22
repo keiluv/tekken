@@ -89,18 +89,11 @@ public class SplashActivity extends AppCompatActivity {
 
     @BindArray(R.array.versionKey)
     String[] versionKey;
-
-    private static final String FCM_MESSAGE_URL = "https://fcm.googleapis.com/fcm/send";
-    private static final String SERVER_KEY = "AAAAwn0NO-4:APA91bGv4lBoEVJYJVZYc2h8ociCjyo7IgMWHYSgIRS0H-yW_mwaKdShRxqPgwtG6So2E_9cHZGCFrkzO1KbeVSCTFdoY_Cry0zpHNXrOisnJ7lEx-lrNtfwPsAownCmymK2sypssqm5";
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
         ButterKnife.bind(this);
-
-        Send("fFIdjd0-gHw:APA91bEKGTPWiMj8RhQnoW0ROGSIPmSurApLK18IHxmhJrRVIWbeNWLwxEbF6UIB5Iuw9m303hs-KEClOSi6LX3u6FRALxr3YG6c_AcRU5QiQl4jOwGozIdH73wWkuUjysqybinpXQc-");
-//        Log.e("token", FirebaseInstanceId.getInstance().getToken());
 
         intent = new Intent(this, MainActivity.class);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
@@ -139,37 +132,6 @@ public class SplashActivity extends AppCompatActivity {
                 .check();
     }
 
-    //test
-    public void Send(final String token) {
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                try {
-                    JSONObject root = new JSONObject();
-                    JSONObject notification = new JSONObject();
-                    notification.put("body", "test");
-                    root.put("notification", notification);
-                    root.put("to", token);
-
-                    URL Url = new URL(FCM_MESSAGE_URL);
-                    HttpURLConnection conn = (HttpURLConnection) Url.openConnection();
-                    conn.setRequestMethod("POST");
-                    conn.setDoOutput(true);
-                    conn.setDoInput(true);
-                    conn.addRequestProperty("Authorization", "key=" + SERVER_KEY);
-                    conn.setRequestProperty("Accept", "application/json");
-                    conn.setRequestProperty("Content-type", "application/json");
-                    OutputStream os = conn.getOutputStream();
-                    os.write(root.toString().getBytes("utf-8"));
-                    os.flush();
-                    conn.getResponseCode();
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-            }
-        }).start();
-    }
-
     private NetworkInfo getNetworkInfo() {
         ConnectivityManager manager = (ConnectivityManager) getSystemService(CONNECTIVITY_SERVICE);
         NetworkInfo info = manager.getActiveNetworkInfo();
@@ -197,38 +159,6 @@ public class SplashActivity extends AppCompatActivity {
             dialog.show();
         }
     }
-
-//    private void appVersionChecker() {
-//        try {
-//
-//            String store_version = VersionChecker.getMarketVersion(getPackageName());
-//            String device_version = getPackageManager().getPackageInfo(getPackageName(), 0).versionName;
-//
-//            if (store_version.compareTo(device_version) > 0) {
-//                // 업데이트 필요
-//
-//                Log.e("true_store", store_version);
-//                Log.e("true_app", device_version);
-//
-//            } else {
-//
-//                Log.e("false_store", store_version);
-//                Log.e("false_app", device_version);
-//
-//            }
-//        } catch (PackageManager.NameNotFoundException e) {
-//            e.printStackTrace();
-//        }
-//    }
-
-//    public class MyAsyncTask extends AsyncTask {
-//
-//        @Override
-//        protected Object doInBackground(Object[] objects) {
-//            return null;
-//        }
-//
-//    }
 
     public void versionChecker(final SuccessListener listener) {
         for (final String key : versionKey) {

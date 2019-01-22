@@ -40,7 +40,6 @@ public class MainActivity extends AppCompatActivity {
     private boolean isPageCheck = true;
 
     private MenuItem mFavoriteMenu;
-    private MenuItem mSettingMenu;
 
     private MainViewPagerAdapter mainViewPagerAdapter;
 
@@ -248,7 +247,6 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-
     private void checkData() {
         if (!getPath("profile", "").exists()) {
             FinishApp();
@@ -276,7 +274,6 @@ public class MainActivity extends AppCompatActivity {
                 return;
             }
         }
-
     }
 
     private File getPath(String downPath, String characterName) {

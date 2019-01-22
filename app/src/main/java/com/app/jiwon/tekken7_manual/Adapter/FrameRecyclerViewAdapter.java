@@ -123,7 +123,9 @@ public class FrameRecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.
         } else {
             for (FrameRecyclerViewItem item : saveList) {
 
-                if (item.getCommand().toLowerCase().contains(searchText) || item.getSkillName().toLowerCase().contains(searchText)) {
+                if (item.getCommand().toLowerCase().contains(searchText)
+                        || item.getSkillName().toLowerCase().contains(searchText)
+                        || item.getNote().toLowerCase().contains(searchText)) {
                     list.add(item);
                 }
             }

@@ -7,8 +7,8 @@ android {
         applicationId "com.app.jiwon.tekken7_manual"
         minSdkVersion 21
         targetSdkVersion 26
-        versionCode 26
-        versionName "v2.3"
+        versionCode 27
+        versionName "v2.4"
         testInstrumentationRunner "android.support.versionChecker.runner.AndroidJUnitRunner"
     }
     buildTypes {

@@ -29,7 +29,7 @@
     <string name="actionBar_character_search_hint">캐릭터 검색</string>
     <string name="actionBar_dictionary_search_hint">용어 검색</string>
 
-    <string name="actionBar_frame_search_hint">커맨드, 스킬명으로 검색</string>
+    <string name="actionBar_frame_search_hint">커맨드, 비고, 스킬명으로 검색</string>
 
     <string name="splashActivity_permisson_alert_message">권한 체크 실패</string>
     <string name="splashActivity_permisson_rationale_message">데이터를 받기위해 인터넷, 저장소 접근 권한이 필요합니다.</string>
